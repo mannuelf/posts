@@ -1,3 +1,15 @@
+---
+title: 'Git submodules'
+excerpt: git submodules are great, they allow you to add another repository to an existing project. So that you can keep your dependecies seperate and managed by separate repos.'
+coverImage: '/assets/blog/dynamic-routing/cover.jpg'
+date: '2020-03-16T05:35:07.322Z'
+author:
+  name: M Ferreira
+  picture: 'https://res.cloudinary.com/mannuel/image/upload/v1604067445/images/mee.jpg'
+ogImage:
+  url: 'https://res.cloudinary.com/mannuel/image/upload/v1604067445/images/mee.jpg'
+---
+
 # Git submodules
 
 git submodules are great, they allow you to add another repository to an existing project. So that you can keep your dependecies seperate and managed by separate repos.
