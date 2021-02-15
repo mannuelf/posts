@@ -16,23 +16,29 @@ ogImage:
 
 - docker.com
 
-Docker is container runtime environment. It isolates all dependencies required to build and run an application into one neat and small (mostly) container.
+Docker is container runtime environment.
+
+It isolates all software dependencies required to build and run an application into one neat and small (mostly) container.
 
 ### So what?
 
-Well instead of installing Node.js, NPM, NVM, MongoDB, PHP on your LAPTOP all you have to do is pull down a Docker IMAGE that already has that software packaged inside of it. All you have to do use it, build you code in it.
+Well instead of installing Node.js, NPM, NVM, MongoDB, PHP on your LAPTOP all you have to do is pull down a Docker IMAGE that already has that software packaged inside of it ready for your to insert your web app into.
+
+### so how does it work?
+
+All you have to do use is pull down an image and build a container from it, it is in this container that your code will live.
 
 ![node](./.images/node-image.png)
-
-```bash
-docker pull node
-```
 
 You manage your containers using the Docker application on your development machine.
 
 You manage your containers using the docker CLI (command line interface)
 
-You can
+```bash
+docker --help
+```
+
+You can:
 
 - create
 - delete
@@ -43,14 +49,15 @@ You can
 
 ![install](.images/docker-desktop.png)
 
-## Clone image
+### Clone image
 
 ```bash
-docker run --name repo alpine/git clone https://github.com/docker/getting-started.git
+docker pull node
 ```
 
+Head over to your project 
 ```bash
-docker cp repo:/git/getting-started/ .
+cd docker101
 ```
 
 ## Build container
@@ -62,8 +69,10 @@ docker build -t docker101tutorial .
 ## Run your first container
 
 ```bash
-docker run -d -p 80:80 --name docker-tutorial docker101tutorial
+docker run -d -p 81:81 --name docker-tutorial docker101tutorial
 ```
+
+## What is a container?
 
 ## Now save and share your image
 
