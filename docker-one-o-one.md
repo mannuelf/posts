@@ -1,5 +1,5 @@
 ---
-title: 'Docker one o one'
+title: 'Docker 101'
 excerpt: 'Docker allows developers to build software in a container environment. Instead of Virtual Machines which are cumbersome Docker is light weight and allows you to isolate your program and development to a single container.'
 coverImage: '/assets/blog/dynamic-routing/cover.jpg'
 date: '2021-02-09T22:10:35+00:00'
@@ -55,21 +55,46 @@ You can:
 docker pull node
 ```
 
-Head over to your project 
+Head over to your project and create Dockerfile.
+
 ```bash
-cd docker101
+cd docker-101
 ```
+
+## Dockerfile
+
+The Dockerfile is a configuration file that tells Docker:
+
+```bash
+touch Dockerfile
+```
+
+Then configure it
+
+```bash
+FROM node:12-alpine
+WORKDIR /app
+COPY . .
+RUN yarn install --production
+CMD ["node", "src/index.js"]
+```
+
+1. **FROM** what software to use
+2. **WORKDIR** to put your website
+3. **COPY** which website files to place in which folder in the docker container, first dot is your root, second dot is container root
+4. **RUN** Installation commands for node app
+5. **CMD** which node starter commands to run when the container is finished building
 
 ## Build container
 
 ```bash
-docker build -t docker101tutorial .
+docker build -t docker-101 .
 ```
 
 ## Run your first container
 
 ```bash
-docker run -d -p 81:81 --name docker-tutorial docker101tutorial
+docker run -d -p 8080:8080 --name docker-101 docker-101
 ```
 
 ## What is a container?
