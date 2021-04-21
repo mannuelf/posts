@@ -1,11 +1,11 @@
 ---
-title: "Minikube, Kubernetes &amp; Docker pt. 1"
+title: "Minikube"
 excerpt: "Minikube is a tool which allows you to run a single node Lubernetest cluster on your computer."
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
 date: "2020-03-16T05:35:07.322Z"
 author:
-        name: "M Ferreira"
-        picture: "https://res.cloudinary.com/mannuel/image/upload/v1604067445/images/mee.jpg"
+  name: "M Ferreira"
+  picture: "https://res.cloudinary.com/mannuel/image/upload/v1604067445/images/mee.jpg"
 ogImage:
 url: "https://res.cloudinary.com/mannuel/image/upload/v1604067445/images/mee.jpg"
 ---
